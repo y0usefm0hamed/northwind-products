@@ -22,12 +22,12 @@ modules:
       instance:
         destinations:
         - Name: cominternnorthwindappnorthwindproducts_html_repo_host
-          ServiceInstanceName: cominternnorthwindappnorthwindproducts-html5-service
+          ServiceInstanceName: cominternnorthwindappnorthwindproducts-htm7dd89b4f
           ServiceKeyName: cominternnorthwindappnorthwindproducts-repo-host-key
           sap.cloud.service: cominternnorthwindappnorthwindproducts
         - Authentication: OAuth2UserTokenExchange
           Name: cominternnorthwindappnorthwindproducts_uaa
-          ServiceInstanceName: cominternnorthwindappnorthwindproducts-xsuaa-service
+          ServiceInstanceName: cominternnorthwindappnorthwindproducts-xsua2182bdf
           ServiceKeyName: cominternnorthwindappnorthwindproducts-uaa-key
           sap.cloud.service: cominternnorthwindappnorthwindproducts
         existing_destinations_policy: update
@@ -44,7 +44,7 @@ modules:
     build-result: resources
     requires:
     - artifacts:
-      - cominternnorthwindappnorthwindproducts.zip
+      - data.zip
       name: cominternnorthwindappnorthwindproducts
       target-path: resources/
 - name: cominternnorthwindappnorthwindproducts
