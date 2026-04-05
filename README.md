@@ -77,7 +77,7 @@ The `destination-content` module referenced service names that didn't match the 
 When clicking a product row to navigate to the Object Page, the page loaded successfully (Edit/Delete buttons visible) but rendered blank with no fields displayed. This was caused by missing `UI.FieldGroup` and `UI.Facets` annotations in `annotation.xml`. The issue was resolved by manually adding these annotations to define the Object Page sections and fields. However, due to the BAS preview environment requiring a Fiori Launchpad shell for `ShellUIService`, the Object Page fields did not render correctly in the standalone preview. The Page Map confirmed the Object Page was correctly configured with navigation from the List Report to the Object Page using the Products entity.
 ![Object Page Rendering Blan](docs/B4.Object_Page_Rendering_Blank.png)
 
-**Challenge 5 — B5 - 403 Forbidden response**
+**Challenge 5  403 Forbidden response**
 A POST request was attempted using Postman against the public OData service. However, the request returned a 403 Forbidden response due to server-side restrictions on write operations. This behavior is expected for publicly hosted demo services with limited write access. The request structure, headers, and body were correctly configured in accordance with OData V2 standards.
 ![POST Request](docs/B5.forbidden_post_request.png)
 
@@ -105,8 +105,8 @@ https://cce3f1e8trial.launchpad.cfapps.us10.hana.ondemand.com/9db276a2-eeab-4660
 ![App Preview](docs/D3.Application_running_in_BAS_Preview_showing_real_data.png)
 
 ### B1 — Deployed Application
-![Deployed App](docs/cf_html5-list.png)
-![Deployed Ap](docs/B1.deployed_Application.png)
+![Deployed App](docs/cf_html5_list.png)
+![Deployed App](docs/B1.Deployed_Application.png.deployed_Application.png)
  
 ### B2 — Postman OData Queries
 ![Postman top](docs/B2.1.$top.png)
@@ -116,9 +116,3 @@ https://cce3f1e8trial.launchpad.cfapps.us10.hana.ondemand.com/9db276a2-eeab-4660
  
 ### B3 — XSUAA Login Prompt
 ![XSUAA Login](docs/B3.XSUAA_Authentication.png)
- 
-### B4 — Object Page Detail View
-![Object Page](docs/B4-object-page.png)
- 
-### B5 — Postman POST Request
-![POST Request](docs/B5-post-request.png)
