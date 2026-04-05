@@ -1,0 +1,69 @@
+{
+  "info": {
+    "_postman_id": "36cd56f5-6af1-4297-8605-12d47b365d6e",
+    "name": "Northwind OData Tests",
+    "description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53757385",
+    "_collection_link": "https://go.postman.co/collection/53757385-36cd56f5-6af1-4297-8605-12d47b365d6e?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "$top",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://services.odata.org/V2/Northwind/Northwind.svc/Products?$top=5&$format=json",
+          "protocol": "https",
+          "host": [
+            "services",
+            "odata",
+            "org"
+          ],
+          "path": [
+            "V2",
+            "Northwind",
+            "Northwind.svc",
+            "Products"
+          ],
+          "query": [
+            {
+              "key": "$top",
+              "value": "5"
+            },
+            {
+              "key": "$format",
+              "value": "json"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "$filter",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "$select",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "$orderby",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}
