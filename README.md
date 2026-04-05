@@ -112,7 +112,7 @@ https://cce3f1e8trial.launchpad.cfapps.us10.hana.ondemand.com/9db276a2-eeab-4660
 
 ### B1 — Deployed Application
 ![Deployed App](docs/cf_html5_list.png)
-![Deployed App](docs/B1.Deployed_Application.png.deployed_Application.png)
+![Deployed App](docs/B1.Deployed_Application.png)
  
 ### B2 — Postman OData Queries
 ![Postman top](docs/B2.1.$top.png)
