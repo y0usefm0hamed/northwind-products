@@ -73,19 +73,19 @@ The Northwind service has no backend UI annotations, so the List Report and Obje
 **Challenge 3 — Service Name Mismatch in `mta.yaml`**
 The `destination-content` module referenced service names that didn't match the actual deployed service instance names. This was resolved by updating the `ServiceInstanceName` values in `mta.yaml` to match the actual service names created by CF.
 
-**Challenge 4 — B4 - Object Page Rendering Blank**
+**Challenge 4 (Bonus 4) - Object Page Rendering Blank**
 
 When clicking a product row to navigate to the Object Page, the page loaded successfully (Edit/Delete buttons visible) but rendered blank with no fields displayed. This was caused by missing `UI.FieldGroup` and `UI.Facets` annotations in `annotation.xml`. The issue was resolved by manually adding these annotations to define the Object Page sections and fields. However, due to the BAS preview environment requiring a Fiori Launchpad shell for `ShellUIService`, the Object Page fields did not render correctly in the standalone preview. The Page Map confirmed the Object Page was correctly configured with navigation from the List Report to the Object Page using the Products entity.
 
 ![Object Page Rendering Blan](docs/B4.Object_Page_Rendering_Blank.png)
 
-**Challenge 5  403 Forbidden response**
+**Challenge 5 (Bonus 5) — 403 Forbidden response**
 
 A POST request was attempted using Postman against the public OData service. However, the request returned a 403 Forbidden response due to server-side restrictions on write operations. This behavior is expected for publicly hosted demo services with limited write access. The request structure, headers, and body were correctly configured in accordance with OData V2 standards.
 
 ![POST Request](docs/B5.forbidden_post_request.png)
 
-**Challenge 6 — B6 - SAP Build Work Zone Access Denied (B6)**
+**Challenge 6 (Bonus 6) - SAP Build Work Zone Access Denied (B6)**
 
 Despite subscribing to SAP Build Work Zone (standard edition) and assigning the `Launchpad_Admin` and `Launchpad_Advanced_Theming` role collections, the Work Zone site manager returned "Access Denied" on every attempt. This appears to be a known limitation of SAP BTP Trial accounts where role propagation can take time or may be restricted. B6 was attempted but could not be fully completed due to this platform-level restriction.
 
