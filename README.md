@@ -88,10 +88,10 @@ Despite subscribing to SAP Build Work Zone (standard edition) and assigning the 
 ## Bonus Tasks Completed
 
 **B1** Deploy to Cloud Foundry using MTA build tools and `cf deploy`
+
 **B2**  Test OData endpoint via Postman with `$top`, `$filter`, `$select`, `$orderby`
+
 **B3** XSUAA Authentication configured — login prompt on deployed URL.
-**B4** Fiori Object Page added — drill-down navigation from List Report.
-**B5** OData POST request demonstrated via Postman against writable service.
 
 ## Deployed Application URL
 https://cce3f1e8trial.launchpad.cfapps.us10.hana.ondemand.com/9db276a2-eeab-4660-af61-56663f191558.cominternnorthwindappnorthwindproducts.cominternnorthwindappnorthwindproducts-0.0.1/index.html
